@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinWise Chatbot - Your Financial Literacy Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-piggy-bank"></i>
+            <span>FinWise</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#chat">Chat</a>
+            <a href="#learn">Learn</a>
+            <a href="#tools">Tools</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Your Personal Financial Literacy Guide</h1>
+            <p>Learn about budgeting, saving, investing, and more with our AI-powered chatbot</p>
+            <button class="cta-button" onclick="location.href='#chat'">Start Chatting</button>
+        </div>
+        <div class="hero-image">
+            <img src="OIP.jpg" alt="Financial Planning">
+        </div>
+    </section>
+
+    <section id="chat" class="chat-section">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>FinWise Chatbot</h2>
+                <p>Ask me anything about personal finance!</p>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot">
+                    <p>Hello! I'm your financial literacy assistant. How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Ask a question about finance...">
+                <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="learn" class="topics-section">
+        <h2>Explore Financial Topics</h2>
+        <div class="topics-grid">
+            <div class="topic-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Budgeting</h3>
+                <p>Learn how to create and maintain a budget</p>
+            </div>
+            <div class="topic-card">
+                <i class="fas fa-piggy-bank"></i>
+                <h3>Saving</h3>
+                <p>Discover effective saving strategies</p>
+            </div>
+            <div class="topic-card">
+                <i class="fas fa-chart-pie"></i>
+                <h3>Investing</h3>
+                <p>Understand the basics of investing</p>
+            </div>
+            <div class="topic-card">
+                <i class="fas fa-credit-card"></i>
+                <h3>Credit</h3>
+                <p>Learn about credit scores and management</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tools" class="tools-section">
+        <h2>Financial Tools</h2>
+        <div class="tools-grid">
+            <div class="tool-card">
+                <h3>Budget Calculator</h3>
+                <div class="calculator">
+                    <input type="number" id="income" placeholder="Monthly Income">
+                    <input type="number" id="expenses" placeholder="Monthly Expenses">
+                    <button onclick="calculateBudget()">Calculate</button>
+                    <div id="budget-result"></div>
+                </div>
+            </div>
+            <div class="tool-card">
+                <h3>Savings Goal Calculator</h3>
+                <div class="calculator">
+                    <input type="number" id="goal-amount" placeholder="Goal Amount">
+                    <input type="number" id="monthly-savings" placeholder="Monthly Savings">
+                    <button onclick="calculateSavings()">Calculate</button>
+                    <div id="savings-result"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="glossary-section">
+        <h2>Financial Glossary</h2>
+        <div class="glossary-container">
+            <div class="glossary-item">
+                <h3>APR</h3>
+                <p>Annual Percentage Rate - The yearly interest rate charged on borrowed money</p>
+            </div>
+            <div class="glossary-item">
+                <h3>ROI</h3>
+                <p>Return on Investment - A measure of the profitability of an investment</p>
+            </div>
+            <div class="glossary-item">
+                <h3>401(k)</h3>
+                <p>A retirement savings plan sponsored by an employer</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FinWise</h3>
+                <p>Your guide to financial literacy</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#chat">Chat</a>
+                <a href="#learn">Learn</a>
+                <a href="#tools">Tools</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: support@finwise.com</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FinWise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
